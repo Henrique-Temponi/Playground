@@ -16,6 +16,11 @@ public class simpleStage extends Application {
             primaryStage.setY(i);
             primaryStage.setX(i);
             primaryStage.show();
+            try {
+                
+            } catch (Exception e) {
+                //TODO: handle exception
+            }
         }
 
         primaryStage.show();
@@ -25,3 +30,7 @@ public class simpleStage extends Application {
         Application.launch(args);
     }
 }
+
+
+http://tutorials.jenkov.com/javafx/stage.html
+,https://docs.oracle.com/javase/8/javafx/api/toc.htm
