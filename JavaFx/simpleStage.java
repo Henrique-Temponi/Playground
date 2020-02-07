@@ -1,4 +1,9 @@
+import java.util.concurrent.TimeUnit;
+
 import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.VBox;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 /**
@@ -12,18 +17,36 @@ public class simpleStage extends Application {
     @Override
     public void start(Stage primaryStage) {
         
-        for (int i = 0; i < 100; i++) {
-            primaryStage.setY(i);
-            primaryStage.setX(i);
-            primaryStage.show();
-            try {
-                
-            } catch (Exception e) {
-                //TODO: handle exception
-            }
-        }
+        // for (int i = 0; i < 500; i++) {
+        //     primaryStage.setY(i);
+        //     primaryStage.setX(i);
 
+        //     // try {
+        //     //     TimeUnit.MILLISECONDS.sleep(500);
+        //     // } catch (Exception e) {
+        //     //     e.printStackTrace();
+        //     // }
+        //     // primaryStage.show();
+        // }
+
+        // primaryStage.show();
+
+        // Stage stage = new Stage();
+
+        // stage.initModality(Modality.WINDOW_MODAL);
+        // stage.initOwner(primaryStage);
+        // stage.show();
+
+        primaryStage.setTitle("JavaFX App");
+
+        VBox box = new VBox();
+        Scene scene = new Scene(box);
+
+        primaryStage.setScene(scene);
+        primaryStage.setFullScreen(true);
+    
         primaryStage.show();
+
     }
 
     public static void main(String[] args) {
@@ -31,6 +54,7 @@ public class simpleStage extends Application {
     }
 }
 
-
+/*
 http://tutorials.jenkov.com/javafx/stage.html
-,https://docs.oracle.com/javase/8/javafx/api/toc.htm
+https://docs.oracle.com/javase/8/javafx/api/toc.htm
+*/
