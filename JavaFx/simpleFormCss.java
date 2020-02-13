@@ -17,7 +17,7 @@ import javafx.stage.Stage;
 /**
  * simpleForm
  */
-public class simpleForm extends Application {
+public class simpleFormCss extends Application {
 
     @Override
     public void start(Stage primaryStage) {
@@ -65,6 +65,9 @@ public class simpleForm extends Application {
 
         // grid.setGridLinesVisible(true); // Mostrar linhas para propositos de debugging
         primaryStage.setScene(scene);
+
+        scene.getStylesheets().add(getClass().getResource(".\\css\\style.css").toExternalForm());
+
         primaryStage.setTitle("JavaFX Welcome");
         primaryStage.show();
     }

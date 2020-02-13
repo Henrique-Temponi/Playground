@@ -1,0 +1,4 @@
+.root {
+    background-image: url("wave.jpg");
+    -fx-background-image: url("wave.jpg");
+}
