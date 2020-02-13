@@ -31,20 +31,21 @@ public class simpleFormCss extends Application {
         
         
         Text sceneTitle = new Text("Welcome");
-        sceneTitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
+        sceneTitle.setId("Welcome-text");
+        // sceneTitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
         grid.add(sceneTitle, 0, 0, 2, 1);
 
-        Label userName = new Label("User name");
+        Label userName = new Label("Username");
         grid.add(userName, 0, 1);
         
         TextField userTextField = new TextField();
         grid.add(userTextField, 1, 1);
 
-        Label pw = new Label("PassWord");
+        Label pw = new Label("Password");
         grid.add(pw, 0, 2);
 
         PasswordField pwBox = new PasswordField();
-        grid.add(pwBox, 1, 2);
+        grid.add(pwBox, 1, 2);              
 
         Button signIn = new Button("Sign in");
         HBox positionSignIn = new HBox(10);
@@ -54,9 +55,10 @@ public class simpleFormCss extends Application {
 
         final Text actionTarget = new Text();
         grid.add(actionTarget, 1, 6);
+        actionTarget.setId("actionTarget");
 
         signIn.setOnAction(e -> {
-            actionTarget.setFill(Color.FIREBRICK);
+            // actionTarget.setFill(Color.FIREBRICK);
             actionTarget.setText("Sign in Button pressed");
         });
 
@@ -67,7 +69,7 @@ public class simpleFormCss extends Application {
         primaryStage.setScene(scene);
 
         scene.getStylesheets().add(getClass().getResource(".\\css\\style.css").toExternalForm());
-
+        primaryStage.setFullScreen(true);
         primaryStage.setTitle("JavaFX Welcome");
         primaryStage.show();
     }

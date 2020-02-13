@@ -2,3 +2,51 @@
     background-image: url("wave.jpg");
     -fx-background-image: url("wave.jpg");
 }
+
+.label {
+    font-size:  12px;
+    font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+#Welcome-text {
+
+    font-size: 32px;
+    font-family: "Arial black";
+    fill: #818181;
+    -fx-font-size: 32px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #818181;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+#actionTarget {
+
+    fill: firebrick;
+    font-weight: bold;
+    -fx-fill: FIREBRICK;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );  
+}
+
+.button {
+
+    font-family: "Arial Narrow";
+    font-weight: bold;
+    background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+
+    background-color: linear-gradient(#2A5058, #61a2b1);
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+
+}
