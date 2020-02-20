@@ -1,6 +1,8 @@
 .root {
-    background-image: url("wave.jpg");
-    -fx-background-image: url("wave.jpg");
+    background-image: url("../wave.jpg");
+    background-size: cover;
+    -fx-background-image: url("../wave.jpg");
+    -fx-background-size: cover;
 }
 
 .label {
